@@ -7,6 +7,7 @@ export const LogoContainer = styled.div.attrs({
 })`
 display: flex;
 
+
 `
 
 export const TiltLogoContainer = styled.div.attrs({

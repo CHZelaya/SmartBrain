@@ -1,10 +1,10 @@
 import React from 'react'
-import { Nav } from "./navigationStyling"
+import { Nav, SignOut } from "./navigationStyling"
 
 const Navigation = () => {
     return (
         <Nav>
-            <p>Sign out</p>
+            <SignOut>Sign out</SignOut>
         </Nav>
     )
 }
