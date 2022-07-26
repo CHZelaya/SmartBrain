@@ -18,8 +18,9 @@ export const Form = styled.div.attrs({
 })``
 
 export const Input = styled.input.attrs({
-    type: "text",
-    className: "f4 pa2 w-70 center"
+    type: "input",
+    placeholder: "Enter Url here...",
+    className: "f4 pa2 w-70 center",
 })``
 
 export const Button = styled.button.attrs({

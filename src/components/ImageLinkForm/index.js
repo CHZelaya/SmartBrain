@@ -6,17 +6,17 @@ import {
     Form,
     Input,
     Button,
-} from './ImageLinkFormStyling'
+} from './ImageLinkFormStyling';
 
 
-const ImageLinkForm = () => {
+const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
     return (
         <ImageLinkFormContainer>
             <Paragraph>{`This Magic Brain will detect faces in your pictures. Give it a try!`}</Paragraph>
             <FormContainer>
                 <Form>
-                    <Input></Input>
-                    <Button>Detect!</Button>
+                    <Input onChange={onInputChange}></Input>
+                    <Button onClick={onButtonSubmit}>Detect!</Button>
                 </Form>
             </FormContainer>
         </ImageLinkFormContainer>
