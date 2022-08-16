@@ -15,10 +15,12 @@ export const FormContainer = styled.div.attrs({
 
 export const Form = styled.div.attrs({
     className: "patternedbg center pa4 br3 shadow-5 center"
-})``
+})`
+width: 700px;
+`
 
 export const Input = styled.input.attrs({
-    type: "input",
+    type: "text",
     placeholder: "Enter Url here...",
     className: "f4 pa2 w-70 center",
 })``

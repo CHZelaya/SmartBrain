@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaceRecognitionContainer, ImageContainer, Image, BorderBox } from "./FaceRecognitionStyling"
+import { FaceRecognitionContainer, ImageContainer, Image, } from "./FaceRecognitionStyling"
+import "./FaceRecognition.css";
 
 const FaceRecognition = ({ imageUrl, box }) => {
 
@@ -8,15 +9,15 @@ const FaceRecognition = ({ imageUrl, box }) => {
 
             <ImageContainer>
                 <Image src={imageUrl}></Image>
-                <BorderBox className="bounding-box" style={{
+                <div className="bounding-box" style={{
                     left: box.leftCol,
                     top: box.topRow,
                     right: box.rightCol,
                     bottom: box.bottomRow
-                }}>
-                </BorderBox>
+                }}
+                >
+                </div>
             </ImageContainer>
-            <div>{console.log("in component:", box)}</div>
 
         </FaceRecognitionContainer>
     )

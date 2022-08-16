@@ -6,10 +6,10 @@ import {
 
 } from './RankStyling'
 
-const Rank = () => {
+const Rank = ({ user, entries }) => {
     return (
         <RankContainer>
-            <Paragraph1> {'User, your current rank is...'} </Paragraph1>
+            <Paragraph1> {`${user}, your current rank is ${entries}`} </Paragraph1>
             <Paragraph2> {'#5'} </Paragraph2>
         </RankContainer>
     )
